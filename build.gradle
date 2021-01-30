@@ -23,12 +23,17 @@ allprojects {
 
 ext {
     //Versions
+    glideVersion = '4.11.0'
     gsonVersion = '2.8.6'
     okHttpLoggingInterceptorVersion = '4.7.2'
     retrofitVersion = '2.9.0'
     roomVersion = '2.2.5'
     rxAndroidVersion = '2.1.1'
     rxJavaVersion = '2.2.19'
+
+    //Glide
+    glideCompiler = "com.github.bumptech.glide:compiler:$glideVersion"
+    glideLib = "com.github.bumptech.glide:glide:$glideVersion"
 
     //Gson
     gsonLib = "com.google.code.gson:gson:$gsonVersion"

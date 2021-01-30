@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TheMovieDB-Android</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_description_movie_detail_image">Movie poster item</string>
+    <string name="content_description_movie_image">Movie poster item</string>
+    <string name="content_description_movie_image_favorite_icon">Movie poster favorite icon</string>
+
+    <!-- Errors -->
+    <string name="error_no_available_data">No available data for the moment.</string>
 </resources>

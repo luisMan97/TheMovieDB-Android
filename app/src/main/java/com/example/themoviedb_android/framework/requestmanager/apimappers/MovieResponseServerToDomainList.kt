@@ -7,7 +7,9 @@ fun MovieResponseServer.toMovieDomainList(): List<Movie> = results.map {
     it.run {
         Movie(
             id,
-            title
+            title,
+            overview,
+            posterPath
         )
     }
 }
