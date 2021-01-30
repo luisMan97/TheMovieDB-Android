@@ -2,18 +2,19 @@ package com.example.themoviedb_android.modules.movies.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.themoviedb_android.R
+import com.example.themoviedb_android.modules.moviedetail.MovieDetailActivity
 import com.example.themoviedb_android.modules.movies.configurator.MoviesListBuilder
 import com.example.themoviedb_android.modules.movies.domain.Movie
+import com.example.themoviedb_android.modules.movies.domain.parcelable.toMovieParcelable
 import com.example.themoviedb_android.modules.movies.presentation.MoviesListViewModel
 import com.example.themoviedb_android.modules.movies.ui.adapters.MovieListAdapter
+import com.example.themoviedb_android.utils.Constants
 import com.example.themoviedb_android.utils.extensions.setItemDecorationSpacing
 import com.example.themoviedb_android.utils.extensions.showLongToast
+import com.example.themoviedb_android.utils.extensions.startActivity
 import com.example.themoviedb_android.utils.helpers.Event
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -70,7 +71,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openMovieDetail(movie: Movie) {
-
+        startActivity<MovieDetailActivity> {
+            putExtra(Constants.EXTRA_CHARACTER, movie.toMovieParcelable())
+        }
     }
 
 }
