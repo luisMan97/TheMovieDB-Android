@@ -8,7 +8,7 @@ git clone https://github.com/luisMan97/TheMovieDB-Android.git
 ```
 
 #### Arquitectura
-Se implemento CLEAN como arquitectura, con seis capas
+Se implementó CLEAN como arquitectura, con las siguientes capas
 1) UI: Contiene los Activity y sus adapters
 2) Presentation: Contiene los ViewModels
 3) UseCase: Contiene los casos de uso (acciones de la aplicación)
